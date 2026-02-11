@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoya mis proyectos | Aarón Escamilla</title>
+    <style>
+        :root { --primary: #1f538d; --paypal: #003087; --mercadopago: #009ee3; --dark: #2c3e50; --light: #f4f7f6; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--light); text-align: center; padding: 40px 20px; }
+        .card-container { max-width: 500px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h1 { color: var(--dark); font-size: 1.8rem; }
+        p { color: #666; margin-bottom: 30px; }
+        .method-btn { display: flex; align-items: center; justify-content: center; padding: 15px; margin: 15px 0; border-radius: 10px; text-decoration: none; font-weight: bold; color: white; transition: 0.3s; }
+        .method-btn:hover { transform: scale(1.02); }
+        .paypal { background: var(--paypal); }
+        .mercadopago { background: var(--mercadopago); }
+        .transfer { background: var(--dark); }
+        .bank-details { background: #f9f9f9; padding: 15px; border-radius: 8px; font-size: 0.9rem; text-align: left; margin-top: 10px; border: 1px dashed #ccc; display: none; }
+    </style>
+</head>
+<body>
+
+<div class="card-container">
+    <h1>¡Gracias por el apoyo!</h1>
+    <p>Tu contribución ayuda a que siga creando herramientas gratuitas y de código abierto.</p>
+
+    <a href="https://www.paypal.com/paypalme/jaaronescamilla" target="_blank" class="method-btn paypal">
+        💙 Donar con PayPal
+    </a>
+
+    <a href="TU_LINK_DE_MERCADO_PAGO_AQUI" target="_blank" class="method-btn mercadopago">
+        💙 Mercado Pago / Tarjeta
+    </a>
+
+    <a href="#" class="method-btn transfer" onclick="document.getElementById('clabe').style.display='block'; return false;">
+        🏦 Transferencia Bancaria (México)
+    </a>
+    <div id="clabe" class="bank-details">
+        <strong>Banco:</strong> TU_BANCO<br>
+        <strong>CLABE:</strong> 0000 0000 0000 0000 00<br>
+        <strong>Nombre:</strong> Aarón Escamilla Morales
+    </div>
+
+    <div style="margin-top: 30px;">
+        <a href="index.html" style="color: #999; text-decoration: none; font-size: 0.8rem;">← Volver a la página principal</a>
+    </div>
+</div>
+
+</body>
+</html>
