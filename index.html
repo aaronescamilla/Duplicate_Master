@@ -70,8 +70,14 @@
         .card h3 { font-size: 1.5rem; margin: 15px 0; color: var(--primary); }
         .card p { color: var(--text-muted); flex-grow: 1; font-size: 0.95rem; }
 
-        /* Estilo para el nuevo icono */
-        .card-icon { height: 48px; width: 48px; object-fit: contain; margin-bottom: 5px; }
+        /* Estilo para los iconos redondeados */
+        .card-icon { 
+            height: 48px; 
+            width: 48px; 
+            object-fit: contain; 
+            margin-bottom: 5px; 
+            border-radius: 12px; /* Redondeado de iconos */
+        }
 
         /* --- Buttons --- */
         .btn-group { display: flex; gap: 10px; margin-top: 20px; }
@@ -144,6 +150,16 @@
         </div>
 
         <div class="card">
+            <img src="Smart PDF Filter.png" alt="Icono Smart PDF Filter" class="card-icon">
+            <h3>Smart PDF Filter</h3>
+            <p>Optimiza tus documentos eliminando páginas innecesarias mediante filtros inteligentes de texto. Ahorra papel y tóner seleccionando solo lo que importa.</p>
+            <div class="btn-group">
+                <a href="https://github.com/aaronescamilla/aaronescamilladevs/releases/download/V1.0.0/Smart.PDF.Filter.exe" class="btn btn-main">Descargar .exe</a>
+                <a href="https://aaronescamilla.com/donar.html" class="btn btn-donate">Donar ☕</a>
+            </div>
+        </div>
+
+        <div class="card">
             <div style="font-size: 2rem;">📈</div>
             <h3>FinanzaPro Python</h3>
             <p>Un dashboard personal para el seguimiento de inversiones y criptomonedas. Conecta tus datos y visualiza tu crecimiento financiero en tiempo real.</p>
@@ -175,5 +191,3 @@
 
 </body>
 </html>
-
-
